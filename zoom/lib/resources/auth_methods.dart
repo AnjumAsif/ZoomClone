@@ -10,6 +10,8 @@ class AuthModel {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
   FirebaseFirestore _firebaseFirestore = FirebaseFirestore.instance;
 
+  Stream<User?> get authChanges=>_firebaseAuth.authStateChanges();
+
   Future<String> userLogin(String email, String password) async {
     var res = "Error occurred";
     try {
