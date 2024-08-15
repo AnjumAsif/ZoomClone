@@ -41,6 +41,8 @@ dependencies:
   cloud_firestore: ^4.15.6
   firebase_storage: ^11.6.7
   uuid: ^4.2.1
+  jitsi_meet_wrapper: ^0.2.0+1
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:

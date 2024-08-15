@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:zoom/resources/auth_methods.dart';
 import 'package:zoom/screens/home_screen.dart';
 import 'package:zoom/screens/login_screen.dart';
+import 'package:zoom/screens/video_call_screen.dart';
 import 'package:zoom/utils/color.dart';
 
 void main() async {
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
           ThemeData.dark().copyWith(scaffoldBackgroundColor: backgroundColor),
       routes: {
         '/login': (context) => LoginScreen(),
-        '/home': (context) => HomeScreen()
+        '/home': (context) => HomeScreen(),
+        '/video-call': (context) => VideoCallScreen()
       },
       home: StreamBuilder(
         stream: AuthModel().authChanges,
